@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Dubai Yacht Experience | Sailing Spots & Routes</title>
+    <meta name="description" content="Discover Dubai's most stunning sailing destinations. From iconic landmarks to hidden gems, explore the best routes and anchorages in Dubai's waters.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero destinations-hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Discover Dubai's Waters</h1>
+            <p class="hero__subtitle">Iconic landmarks, hidden coves, and endless adventures await</p>
+            <div class="destinations-stats">
+                <div class="dest-stat">
+                    <span class="stat__number">12+</span>
+                    <span class="stat__label">Premium Routes</span>
+                </div>
+                <div class="dest-stat">
+                    <span class="stat__number">5</span>
+                    <span class="stat__label">Iconic Landmarks</span>
+                </div>
+                <div class="dest-stat">
+                    <span class="stat__number">365</span>
+                    <span class="stat__label">Days of Sunshine</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#featured-routes" class="hero__scroll-link">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Routes Section -->
+    <section class="featured-routes section" id="featured-routes">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Popular Journeys</span>
+                <h2 class="section__title">Signature Sailing Routes</h2>
+                <p class="section__description">Handpicked destinations that showcase Dubai's most breathtaking marine landscapes</p>
+            </div>
+
+            <div class="routes__container">
+                <!-- Burj Al Arab & Jumeirah Beach -->
+                <div class="route__card featured">
+                    <div class="route__image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Burj Al Arab sailing route">
+                        <div class="route__overlay">
+                            <div class="route__duration">2-4 hours</div>
+                            <div class="route__difficulty">
+                                <span>Easy</span>
+                                <div class="difficulty__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="route__content">
+                        <h3 class="route__name">Burj Al Arab Iconic Cruise</h3>
+                        <p class="route__description">Sail along Dubai's most famous coastline, featuring the iconic Burj Al Arab and pristine Jumeirah Beach. Perfect for photography and first-time visitors.</p>
+                        <div class="route__highlights">
+                            <div class="highlight__item">
+                                <i class="fas fa-building"></i>
+                                <span>Burj Al Arab Views</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-camera"></i>
+                                <span>Photo Opportunities</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-umbrella-beach"></i>
+                                <span>Jumeirah Beach</span>
+                            </div>
+                        </div>
+                        <a href="packages.html" class="btn btn--outline route__btn">Explore Packages</a>
+                    </div>
+                </div>
+
+                <!-- Dubai Marina & JBR -->
+                <div class="route__card">
+                    <div class="route__image">
+                        <img src="https://images.unsplash.com/photo-1561881286-9f1aced22be8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Dubai Marina yacht cruise">
+                        <div class="route__overlay">
+                            <div class="route__duration">3-6 hours</div>
+                            <div class="route__difficulty">
+                                <span>Easy</span>
+                                <div class="difficulty__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="route__content">
+                        <h3 class="route__name">Marina Skyline Adventure</h3>
+                        <p class="route__description">Experience Dubai's modern skyline from the water, cruising through the heart of Dubai Marina with its towering skyscrapers and vibrant waterfront.</p>
+                        <div class="route__highlights">
+                            <div class="highlight__item">
+                                <i class="fas fa-city"></i>
+                                <span>Marina Skyline</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-cocktail"></i>
+                                <span>Waterfront Dining</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>JBR Shopping</span>
+                            </div>
+                        </div>
+                        <a href="packages.html" class="btn btn--outline route__btn">Explore Packages</a>
+                    </div>
+                </div>
+
+                <!-- Palm Jumeirah -->
+                <div class="route__card">
+                    <div class="route__image">
+                        <img src="https://images.unsplash.com/photo-1589840062932-f2ab2e4d0b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Palm Jumeirah from yacht">
+                        <div class="route__overlay">
+                            <div class="route__duration">4-8 hours</div>
+                            <div class="route__difficulty">
+                                <span>Moderate</span>
+                                <div class="difficulty__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="route__content">
+                        <h3 class="route__name">Palm Jumeirah Discovery</h3>
+                        <p class="route__description">Circumnavigate the world's largest artificial island, witnessing this engineering marvel from the unique perspective of the Arabian Gulf.</p>
+                        <div class="route__highlights">
+                            <div class="highlight__item">
+                                <i class="fas fa-seedling"></i>
+                                <span>Palm Island Views</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-hotel"></i>
+                                <span>Atlantis Resort</span>
+                            </div>
+                            <div class="highlight__item">
+                                <i class="fas fa-binoculars"></i>
+                                <span>Aerial Perspective</span>
+                            </div>
+                        </div>
+                        <a href="packages.html" class="btn btn--outline route__btn">Explore Packages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landmarks Section -->
+    <section class="landmarks section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Iconic Views</span>
+                <h2 class="section__title">Dubai's Maritime Landmarks</h2>
+                <p class="section__description">Witness Dubai's architectural marvels from the best vantage point - the water</p>
+            </div>
+
+            <div class="landmarks__grid">
+                <div class="landmark__card">
+                    <div class="landmark__image">
+                        <img src="https://images.unsplash.com/photo-1583739512777-84c3fb6f8e87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Burj Khalifa from sea">
+                    </div>
+                    <div class="landmark__content">
+                        <h3 class="landmark__name">Burj Khalifa</h3>
+                        <p class="landmark__description">The world's tallest building creates a stunning backdrop visible from various points along your yacht journey.</p>
+                        <div class="landmark__stats">
+                            <span class="stat">828m tall</span>
+                            <span class="stat">Visible 95km away</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark__card">
+                    <div class="landmark__image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Burj Al Arab sail">
+                    </div>
+                    <div class="landmark__content">
+                        <h3 class="landmark__name">Burj Al Arab</h3>
+                        <p class="landmark__description">The iconic sail-shaped hotel is best appreciated from the water, where its architectural genius truly shines.</p>
+                        <div class="landmark__stats">
+                            <span class="stat">321m tall</span>
+                            <span class="stat">7-star luxury</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark__card">
+                    <div class="landmark__image">
+                        <img src="https://images.unsplash.com/photo-1616635278252-db09a3735dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Atlantis from water">
+                    </div>
+                    <div class="landmark__content">
+                        <h3 class="landmark__name">Atlantis The Palm</h3>
+                        <p class="landmark__description">Crown jewel of Palm Jumeirah, this magnificent resort creates a dramatic silhouette against Dubai's skyline.</p>
+                        <div class="landmark__stats">
+                            <span class="stat">1,539 rooms</span>
+                            <span class="stat">46 hectares</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark__card">
+                    <div class="landmark__image">
+                        <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Dubai Marina towers">
+                    </div>
+                    <div class="landmark__content">
+                        <h3 class="landmark__name">Marina Towers</h3>
+                        <p class="landmark__description">A forest of gleaming skyscrapers creating one of the world's most impressive urban waterfronts.</p>
+                        <div class="landmark__stats">
+                            <span class="stat">200+ towers</span>
+                            <span class="stat">3.5km coastline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Spots Section -->
+    <section class="adventure-spots section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Hidden Gems</span>
+                <h2 class="section__title">Adventure & Wildlife Spots</h2>
+                <p class="section__description">Discover Dubai's natural marine life and secluded waters perfect for adventure activities</p>
+            </div>
+
+            <div class="spots__container">
+                <div class="spot__card">
+                    <div class="spot__icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3 class="spot__name">Dolphin Watching Zones</h3>
+                    <p class="spot__description">Encounter playful dolphins in their natural habitat. Best spots are around the Burj Al Arab and outer Dubai waters.</p>
+                    <div class="spot__features">
+                        <span class="feature">Best Time: Early Morning</span>
+                        <span class="feature">Success Rate: 80%</span>
+                        <span class="feature">Distance: 5-15km offshore</span>
+                    </div>
+                </div>
+
+                <div class="spot__card">
+                    <div class="spot__icon">
+                        <i class="fas fa-anchor"></i>
+                    </div>
+                    <h3 class="spot__name">Snorkeling Spots</h3>
+                    <p class="spot__description">Crystal-clear waters around artificial reefs and protected marine areas offer excellent snorkeling opportunities.</p>
+                    <div class="spot__features">
+                        <span class="feature">Visibility: 10-20m</span>
+                        <span class="feature">Marine Life: Tropical Fish</span>
+                        <span class="feature">Depth: 3-8 meters</span>
+                    </div>
+                </div>
+
+                <div class="spot__card">
+                    <div class="spot__icon">
+                        <i class="fas fa-sunset"></i>
+                    </div>
+                    <h3 class="spot__name">Sunset Anchorages</h3>
+                    <p class="spot__description">Prime locations for anchoring during golden hour, offering unobstructed views of Dubai's skyline silhouettes.</p>
+                    <div class="spot__features">
+                        <span class="feature">Protected Waters</span>
+                        <span class="feature">360° Views</span>
+                        <span class="feature">Perfect for Dining</span>
+                    </div>
+                </div>
+
+                <div class="spot__card">
+                    <div class="spot__icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="spot__name">Water Sports Zones</h3>
+                    <p class="spot__description">Designated areas with optimal conditions for jet skiing, parasailing, and other adrenaline-pumping activities.</p>
+                    <div class="spot__features">
+                        <span class="feature">Calm Waters</span>
+                        <span class="feature">Safety Zones</span>
+                        <span class="feature">Equipment Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Guide Section -->
+    <section class="seasonal-guide section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Plan Your Trip</span>
+                <h2 class="section__title">Best Times to Sail</h2>
+                <p class="section__description">Dubai offers year-round sailing, but each season brings unique experiences and conditions</p>
+            </div>
+
+            <div class="seasons__container">
+                <div class="season__card">
+                    <div class="season__header">
+                        <h3 class="season__name">Winter (Dec - Feb)</h3>
+                        <div class="season__temp">18°C - 25°C</div>
+                    </div>
+                    <div class="season__content">
+                        <div class="season__highlights">
+                            <h4>Perfect For:</h4>
+                            <ul>
+                                <li>Long day cruises</li>
+                                <li>Outdoor dining</li>
+                                <li>Water sports</li>
+                                <li>Dolphin watching</li>
+                            </ul>
+                        </div>
+                        <div class="season__conditions">
+                            <span class="condition">Calm seas</span>
+                            <span class="condition">Light winds</span>
+                            <span class="condition">Clear skies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="season__card">
+                    <div class="season__header">
+                        <h3 class="season__name">Spring (Mar - May)</h3>
+                        <div class="season__temp">22°C - 32°C</div>
+                    </div>
+                    <div class="season__content">
+                        <div class="season__highlights">
+                            <h4>Perfect For:</h4>
+                            <ul>
+                                <li>Sunset cruises</li>
+                                <li>Photography</li>
+                                <li>Romantic dinners</li>
+                                <li>Corporate events</li>
+                            </ul>
+                        </div>
+                        <div class="season__conditions">
+                            <span class="condition">Gentle breezes</span>
+                            <span class="condition">Warm waters</span>
+                            <span class="condition">Long days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="season__card">
+                    <div class="season__header">
+                        <h3 class="season__name">Summer (Jun - Aug)</h3>
+                        <div class="season__temp">28°C - 42°C</div>
+                    </div>
+                    <div class="season__content">
+                        <div class="season__highlights">
+                            <h4>Perfect For:</h4>
+                            <ul>
+                                <li>Early morning trips</li>
+                                <li>Night cruises</li>
+                                <li>Swimming & diving</li>
+                                <li>Luxury amenities</li>
+                            </ul>
+                        </div>
+                        <div class="season__conditions">
+                            <span class="condition">Warm waters</span>
+                            <span class="condition">Air conditioning</span>
+                            <span class="condition">Indoor comfort</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="season__card">
+                    <div class="season__header">
+                        <h3 class="season__name">Autumn (Sep - Nov)</h3>
+                        <div class="season__temp">24°C - 35°C</div>
+                    </div>
+                    <div class="season__content">
+                        <div class="season__highlights">
+                            <h4>Perfect For:</h4>
+                            <ul>
+                                <li>All-day adventures</li>
+                                <li>Fishing trips</li>
+                                <li>Group celebrations</li>
+                                <li>Extended cruises</li>
+                            </ul>
+                        </div>
+                        <div class="season__conditions">
+                            <span class="condition">Pleasant weather</span>
+                            <span class="condition">Stable conditions</span>
+                            <span class="condition">Clear visibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Routes Section -->
+    <section class="custom-routes section">
+        <div class="container">
+            <div class="custom__content">
+                <div class="custom__text">
+                    <span class="section__subtitle">Personalized Journeys</span>
+                    <h2 class="section__title">Create Your Custom Route</h2>
+                    <p class="custom__description">
+                        Every sailor has a unique vision. Our expert captains can create personalized routes combining your preferred landmarks, 
+                        activities, and destinations. Whether you want to focus on photography, adventure, relaxation, or celebration, 
+                        we'll craft the perfect maritime experience for you.
+                    </p>
+                    <div class="custom__features">
+                        <div class="custom__feature">
+                            <i class="fas fa-route"></i>
+                            <span>Flexible Itineraries</span>
+                        </div>
+                        <div class="custom__feature">
+                            <i class="fas fa-compass"></i>
+                            <span>Expert Navigation</span>
+                        </div>
+                        <div class="custom__feature">
+                            <i class="fas fa-star"></i>
+                            <span>Premium Experiences</span>
+                        </div>
+                    </div>
+                    <a href="index.html#contact" class="btn btn--primary">Plan My Route</a>
+                </div>
+                <div class="custom__image">
+                    <img src="https://images.unsplash.com/photo-1571051006065-1bb4a11a40c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Custom yacht route planning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Dubai Yacht Experience</h3>
+                    <p>Creating unforgettable moments on the waters of Dubai</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#burj-al-arab">Burj Al Arab Route</a></li>
+                        <li><a href="#marina">Marina Skyline</a></li>
+                        <li><a href="#palm">Palm Jumeirah</a></li>
+                        <li><a href="#adventure">Adventure Spots</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dubai Yacht Experience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp__float">
+        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

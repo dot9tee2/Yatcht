@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - Dubai Yacht Experience | Luxury Yachts Collection</title>
+    <meta name="description" content="Explore our premium fleet of luxury yachts in Dubai. From intimate cruisers to superyachts, find the perfect vessel for your adventure on Dubai's waters.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero fleet-hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Luxury Fleet Collection</h1>
+            <p class="hero__subtitle">From intimate adventures to grand celebrations</p>
+            <div class="fleet-stats">
+                <div class="fleet-stat">
+                    <span class="stat__number">15</span>
+                    <span class="stat__label">Premium Yachts</span>
+                </div>
+                <div class="fleet-stat">
+                    <span class="stat__number">35ft - 120ft</span>
+                    <span class="stat__label">Size Range</span>
+                </div>
+                <div class="fleet-stat">
+                    <span class="stat__number">2 - 50</span>
+                    <span class="stat__label">Guest Capacity</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#fleet-collection" class="hero__scroll-link">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Fleet Filter Section -->
+    <section class="fleet-filter section">
+        <div class="container">
+            <div class="filter__container">
+                <h3 class="filter__title">Find Your Perfect Yacht</h3>
+                <div class="filter__options">
+                    <button class="filter__btn active" data-filter="all">All Yachts</button>
+                    <button class="filter__btn" data-filter="luxury">Luxury Class</button>
+                    <button class="filter__btn" data-filter="adventure">Adventure Ready</button>
+                    <button class="filter__btn" data-filter="party">Party Vessels</button>
+                    <button class="filter__btn" data-filter="romantic">Romantic</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Collection Section -->
+    <section class="fleet-collection section" id="fleet-collection">
+        <div class="container">
+            <!-- Azure Dream -->
+            <div class="yacht-detail" data-category="luxury romantic">
+                <div class="yacht__grid">
+                    <div class="yacht__images">
+                        <div class="yacht__main-image">
+                            <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Azure Dream Yacht">
+                            <div class="yacht__badge">Most Popular</div>
+                        </div>
+                        <div class="yacht__thumbnails">
+                            <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Azure Dream Interior">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Azure Dream Deck">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Azure Dream Sunset">
+                        </div>
+                    </div>
+                    
+                    <div class="yacht__info">
+                        <div class="yacht__header">
+                            <h2 class="yacht__name">Azure Dream</h2>
+                            <div class="yacht__rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating__text">(47 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__specs">
+                            <div class="spec">
+                                <i class="fas fa-ruler"></i>
+                                <span>75 ft</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>12 guests</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-bed"></i>
+                                <span>4 cabins</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>25 knots</span>
+                            </div>
+                        </div>
+                        
+                        <p class="yacht__description">
+                            Elegant superyacht with panoramic windows and spacious deck areas. Perfect for intimate celebrations, romantic dinners, and sunset cruises. Features premium amenities including jacuzzi, water toys, and professional sound system.
+                        </p>
+                        
+                        <div class="yacht__features">
+                            <h4>Premium Features</h4>
+                            <div class="features__grid">
+                                <div class="feature">
+                                    <i class="fas fa-hot-tub"></i>
+                                    <span>Jacuzzi</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-music"></i>
+                                    <span>Sound System</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Chef Service</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>High-Speed WiFi</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-swimming-pool"></i>
+                                    <span>Water Toys</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-glass-cheers"></i>
+                                    <span>Bar Service</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__pricing">
+                            <div class="price">
+                                <span class="price__amount">AED 2,500</span>
+                                <span class="price__period">/ 4 hours</span>
+                            </div>
+                            <button class="btn btn--primary yacht__book-btn">Book Azure Dream</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ocean Pearl -->
+            <div class="yacht-detail" data-category="luxury party adventure">
+                <div class="yacht__grid">
+                    <div class="yacht__images">
+                        <div class="yacht__main-image">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Ocean Pearl Yacht">
+                            <div class="yacht__badge">Adventure Ready</div>
+                        </div>
+                        <div class="yacht__thumbnails">
+                            <img src="https://images.unsplash.com/photo-1561881286-9f1aced22be8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ocean Pearl Party Deck">
+                            <img src="https://images.unsplash.com/photo-1593696954435-6309d19b3354?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ocean Pearl Water Sports">
+                            <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ocean Pearl Night">
+                        </div>
+                    </div>
+                    
+                    <div class="yacht__info">
+                        <div class="yacht__header">
+                            <h2 class="yacht__name">Ocean Pearl</h2>
+                            <div class="yacht__rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating__text">(63 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__specs">
+                            <div class="spec">
+                                <i class="fas fa-ruler"></i>
+                                <span>95 ft</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>20 guests</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-bed"></i>
+                                <span>5 cabins</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>30 knots</span>
+                            </div>
+                        </div>
+                        
+                        <p class="yacht__description">
+                            Magnificent yacht featuring multiple decks perfect for parties and water adventures. Comes with jet skis, parasailing equipment, and a professional entertainment crew. Ideal for celebrations, corporate events, and action-packed adventures.
+                        </p>
+                        
+                        <div class="yacht__features">
+                            <h4>Adventure Features</h4>
+                            <div class="features__grid">
+                                <div class="feature">
+                                    <i class="fas fa-motorcycle"></i>
+                                    <span>Jet Skis (2)</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-parachute-box"></i>
+                                    <span>Parasailing</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>DJ Equipment</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-fire"></i>
+                                    <span>BBQ Grill</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-fish"></i>
+                                    <span>Fishing Gear</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-volleyball-ball"></i>
+                                    <span>Water Sports</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__pricing">
+                            <div class="price">
+                                <span class="price__amount">AED 4,200</span>
+                                <span class="price__period">/ 4 hours</span>
+                            </div>
+                            <button class="btn btn--primary yacht__book-btn">Book Ocean Pearl</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Golden Horizon -->
+            <div class="yacht-detail" data-category="luxury party">
+                <div class="yacht__grid">
+                    <div class="yacht__images">
+                        <div class="yacht__main-image">
+                            <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Golden Horizon Yacht">
+                            <div class="yacht__badge">Ultra Luxury</div>
+                        </div>
+                        <div class="yacht__thumbnails">
+                            <img src="https://images.unsplash.com/photo-1571417978635-8dc3e4e4f18e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Golden Horizon Luxury Interior">
+                            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Golden Horizon Helipad">
+                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Golden Horizon Night Party">
+                        </div>
+                    </div>
+                    
+                    <div class="yacht__info">
+                        <div class="yacht__header">
+                            <h2 class="yacht__name">Golden Horizon</h2>
+                            <div class="yacht__rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating__text">(29 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__specs">
+                            <div class="spec">
+                                <i class="fas fa-ruler"></i>
+                                <span>120 ft</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>30 guests</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-bed"></i>
+                                <span>6 cabins</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>35 knots</span>
+                            </div>
+                        </div>
+                        
+                        <p class="yacht__description">
+                            Ultra-luxury megayacht with helipad and world-class amenities. Features multiple lounges, fine dining areas, and state-of-the-art entertainment systems. Perfect for grand celebrations, corporate events, and exclusive gatherings.
+                        </p>
+                        
+                        <div class="yacht__features">
+                            <h4>Luxury Features</h4>
+                            <div class="features__grid">
+                                <div class="feature">
+                                    <i class="fas fa-helicopter"></i>
+                                    <span>Helipad</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-crown"></i>
+                                    <span>VIP Suites</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-wine-glass-alt"></i>
+                                    <span>Wine Cellar</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-spa"></i>
+                                    <span>Spa Services</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-tv"></i>
+                                    <span>Cinema Room</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-concierge-bell"></i>
+                                    <span>Butler Service</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__pricing">
+                            <div class="price">
+                                <span class="price__amount">AED 8,500</span>
+                                <span class="price__period">/ 4 hours</span>
+                            </div>
+                            <button class="btn btn--primary yacht__book-btn">Book Golden Horizon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sea Breeze -->
+            <div class="yacht-detail" data-category="adventure romantic">
+                <div class="yacht__grid">
+                    <div class="yacht__images">
+                        <div class="yacht__main-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Sea Breeze Yacht">
+                            <div class="yacht__badge">Adventure Plus</div>
+                        </div>
+                        <div class="yacht__thumbnails">
+                            <img src="https://images.unsplash.com/photo-1573843580848-f2f5f32c0cf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sea Breeze Sailing">
+                            <img src="https://images.unsplash.com/photo-1562141134-4a04e3d61e7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sea Breeze Adventure">
+                            <img src="https://images.unsplash.com/photo-1571051006065-1bb4a11a40c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sea Breeze Sunset">
+                        </div>
+                    </div>
+                    
+                    <div class="yacht__info">
+                        <div class="yacht__header">
+                            <h2 class="yacht__name">Sea Breeze</h2>
+                            <div class="yacht__rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating__text">(38 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__specs">
+                            <div class="spec">
+                                <i class="fas fa-ruler"></i>
+                                <span>55 ft</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>8 guests</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-bed"></i>
+                                <span>3 cabins</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>28 knots</span>
+                            </div>
+                        </div>
+                        
+                        <p class="yacht__description">
+                            Perfect balance of adventure and comfort. Ideal for small groups seeking authentic sailing experiences, fishing expeditions, and romantic getaways. Features eco-friendly design and traditional sailing capabilities.
+                        </p>
+                        
+                        <div class="yacht__features">
+                            <h4>Adventure Features</h4>
+                            <div class="features__grid">
+                                <div class="feature">
+                                    <i class="fas fa-wind"></i>
+                                    <span>Sailing Mode</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Eco-Friendly</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-binoculars"></i>
+                                    <span>Dolphin Watching</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-anchor"></i>
+                                    <span>Snorkeling Gear</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Photo Service</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-champagne-glasses"></i>
+                                    <span>Romantic Setup</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="yacht__pricing">
+                            <div class="price">
+                                <span class="price__amount">AED 1,800</span>
+                                <span class="price__period">/ 4 hours</span>
+                            </div>
+                            <button class="btn btn--primary yacht__book-btn">Book Sea Breeze</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Compare</span>
+                <h2 class="section__title">Find Your Perfect Match</h2>
+                <p class="section__description">Compare our most popular yachts to find the perfect vessel for your adventure</p>
+            </div>
+
+            <div class="comparison__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Azure Dream</th>
+                            <th>Ocean Pearl</th>
+                            <th>Golden Horizon</th>
+                            <th>Sea Breeze</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Guest Capacity</td>
+                            <td>12 guests</td>
+                            <td>20 guests</td>
+                            <td>30 guests</td>
+                            <td>8 guests</td>
+                        </tr>
+                        <tr>
+                            <td>Water Sports</td>
+                            <td>Basic</td>
+                            <td>Advanced</td>
+                            <td>Premium</td>
+                            <td>Eco-Adventure</td>
+                        </tr>
+                        <tr>
+                            <td>Best For</td>
+                            <td>Romance & Luxury</td>
+                            <td>Parties & Adventure</td>
+                            <td>Ultra Luxury Events</td>
+                            <td>Intimate Adventures</td>
+                        </tr>
+                        <tr>
+                            <td>Starting Price</td>
+                            <td>AED 2,500</td>
+                            <td>AED 4,200</td>
+                            <td>AED 8,500</td>
+                            <td>AED 1,800</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Dubai Yacht Experience</h3>
+                    <p>Creating unforgettable moments on the waters of Dubai</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Our Fleet</h4>
+                    <ul>
+                        <li><a href="#azure-dream">Azure Dream</a></li>
+                        <li><a href="#ocean-pearl">Ocean Pearl</a></li>
+                        <li><a href="#golden-horizon">Golden Horizon</a></li>
+                        <li><a href="#sea-breeze">Sea Breeze</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dubai Yacht Experience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp__float">
+        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Fleet filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter__btn');
+            const yachtDetails = document.querySelectorAll('.yacht-detail');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    yachtDetails.forEach(yacht => {
+                        if (filter === 'all') {
+                            yacht.style.display = 'block';
+                        } else {
+                            const categories = yacht.getAttribute('data-category');
+                            if (categories.includes(filter)) {
+                                yacht.style.display = 'block';
+                            } else {
+                                yacht.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Thumbnail click functionality
+            document.querySelectorAll('.yacht__thumbnails img').forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    const mainImage = this.closest('.yacht__images').querySelector('.yacht__main-image img');
+                    mainImage.src = this.src;
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

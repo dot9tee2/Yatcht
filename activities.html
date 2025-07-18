@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Dubai Yacht Experience | Water Sports & Entertainment</title>
+    <meta name="description" content="Discover thrilling water sports, entertainment, and adventure activities available on our Dubai yacht charters. From jet skiing to diving, create unforgettable memories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero activities-hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Endless Adventures Await</h1>
+            <p class="hero__subtitle">From adrenaline-pumping water sports to relaxing entertainment</p>
+            <div class="activities-stats">
+                <div class="activity-stat">
+                    <span class="stat__number">15+</span>
+                    <span class="stat__label">Water Sports</span>
+                </div>
+                <div class="activity-stat">
+                    <span class="stat__number">24/7</span>
+                    <span class="stat__label">Entertainment</span>
+                </div>
+                <div class="activity-stat">
+                    <span class="stat__number">100%</span>
+                    <span class="stat__label">Fun Guaranteed</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#water-sports" class="hero__scroll-link">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Activity Categories Section -->
+    <section class="activity-categories section">
+        <div class="container">
+            <div class="categories__tabs">
+                <button class="tab__btn active" data-category="water-sports">Water Sports</button>
+                <button class="tab__btn" data-category="entertainment">Entertainment</button>
+                <button class="tab__btn" data-category="relaxation">Relaxation</button>
+                <button class="tab__btn" data-category="adventure">Adventure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Water Sports Section -->
+    <section class="activities-content section" id="water-sports">
+        <div class="container">
+            <div class="content__category active" data-category="water-sports">
+                <div class="section__header">
+                    <span class="section__subtitle">Get Your Adrenaline Pumping</span>
+                    <h2 class="section__title">Thrilling Water Sports</h2>
+                    <p class="section__description">Experience the ultimate rush with our premium water sports equipment and expert instruction</p>
+                </div>
+
+                <div class="activities__grid">
+                    <!-- Jet Skiing -->
+                    <div class="activity__card featured">
+                        <div class="activity__image">
+                            <img src="https://images.unsplash.com/photo-1560714396-6c2f3f5f77f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Jet skiing in Dubai waters">
+                            <div class="activity__overlay">
+                                <span class="difficulty expert">Expert</span>
+                                <span class="duration">30-60 min</span>
+                            </div>
+                        </div>
+                        <div class="activity__content">
+                            <h3 class="activity__name">Jet Skiing</h3>
+                            <p class="activity__description">Race across Dubai's crystal-clear waters on high-performance jet skis. Perfect for thrill-seekers who want to explore the coastline at speed.</p>
+                            <div class="activity__features">
+                                <div class="feature">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Up to 65 km/h</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-users"></i>
+                                    <span>1-2 riders</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Safety gear included</span>
+                                </div>
+                            </div>
+                            <div class="activity__price">
+                                <span class="price">AED 300</span>
+                                <span class="period">/ hour</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parasailing -->
+                    <div class="activity__card">
+                        <div class="activity__image">
+                            <img src="https://images.unsplash.com/photo-1562141134-4a04e3d61e7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Parasailing over Dubai">
+                            <div class="activity__overlay">
+                                <span class="difficulty moderate">Moderate</span>
+                                <span class="duration">15-20 min</span>
+                            </div>
+                        </div>
+                        <div class="activity__content">
+                            <h3 class="activity__name">Parasailing</h3>
+                            <p class="activity__description">Soar 150 feet above Dubai's coastline with breathtaking bird's-eye views of the city skyline and Arabian Gulf.</p>
+                            <div class="activity__features">
+                                <div class="feature">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Panoramic views</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-parachute-box"></i>
+                                    <span>150ft altitude</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Photo service</span>
+                                </div>
+                            </div>
+                            <div class="activity__price">
+                                <span class="price">AED 450</span>
+                                <span class="period">/ flight</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flyboarding -->
+                    <div class="activity__card">
+                        <div class="activity__image">
+                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Flyboarding water sport">
+                            <div class="activity__overlay">
+                                <span class="difficulty expert">Expert</span>
+                                <span class="duration">20-30 min</span>
+                            </div>
+                        </div>
+                        <div class="activity__content">
+                            <h3 class="activity__name">Flyboarding</h3>
+                            <p class="activity__description">Defy gravity with this futuristic water sport. Fly up to 15 meters above water powered by high-pressure jets.</p>
+                            <div class="activity__features">
+                                <div class="feature">
+                                    <i class="fas fa-rocket"></i>
+                                    <span>15m height</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Training included</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Unique experience</span>
+                                </div>
+                            </div>
+                            <div class="activity__price">
+                                <span class="price">AED 600</span>
+                                <span class="period">/ session</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wakeboarding -->
+                    <div class="activity__card">
+                        <div class="activity__image">
+                            <img src="https://images.unsplash.com/photo-1573844237073-eb01fa846ac7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Wakeboarding behind yacht">
+                            <div class="activity__overlay">
+                                <span class="difficulty moderate">Moderate</span>
+                                <span class="duration">20-40 min</span>
+                            </div>
+                        </div>
+                        <div class="activity__content">
+                            <h3 class="activity__name">Wakeboarding</h3>
+                            <p class="activity__description">Ride the waves behind our powerful yachts. Perfect for beginners and pros alike with adjustable speeds and professional instruction.</p>
+                            <div class="activity__features">
+                                <div class="feature">
+                                    <i class="fas fa-water"></i>
+                                    <span>Perfect wake</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>All skill levels</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-tools"></i>
+                                    <span>Equipment provided</span>
+                                </div>
+                            </div>
+                            <div class="activity__price">
+                                <span class="price">AED 250</span>
+                                <span class="period">/ session</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entertainment Content -->
+            <div class="content__category" data-category="entertainment">
+                <div class="section__header">
+                    <span class="section__subtitle">Premium Entertainment</span>
+                    <h2 class="section__title">Onboard Entertainment</h2>
+                    <p class="section__description">World-class entertainment options to make your yacht experience unforgettable</p>
+                </div>
+
+                <div class="entertainment__grid">
+                    <!-- DJ & Music -->
+                    <div class="entertainment__card">
+                        <div class="entertainment__icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="entertainment__name">DJ & Live Music</h3>
+                        <p class="entertainment__description">Professional DJs and live musicians to set the perfect mood for your celebration.</p>
+                        <ul class="entertainment__features">
+                            <li>Professional sound systems</li>
+                            <li>Customized playlists</li>
+                            <li>Live performers available</li>
+                            <li>Mood lighting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Gourmet Dining -->
+                    <div class="entertainment__card">
+                        <div class="entertainment__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="entertainment__name">Gourmet Dining</h3>
+                        <p class="entertainment__description">World-class chefs prepare exquisite meals tailored to your preferences and dietary requirements.</p>
+                        <ul class="entertainment__features">
+                            <li>Private chef service</li>
+                            <li>International cuisines</li>
+                            <li>Dietary accommodations</li>
+                            <li>Wine pairing available</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cinema & Gaming -->
+                    <div class="entertainment__card">
+                        <div class="entertainment__icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3 class="entertainment__name">Cinema & Gaming</h3>
+                        <p class="entertainment__description">State-of-the-art entertainment systems with movie theaters and gaming consoles.</p>
+                        <ul class="entertainment__features">
+                            <li>4K projection systems</li>
+                            <li>Gaming consoles</li>
+                            <li>Movie libraries</li>
+                            <li>Surround sound</li>
+                        </ul>
+                    </div>
+
+                    <!-- Party Services -->
+                    <div class="entertainment__card">
+                        <div class="entertainment__icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="entertainment__name">Party Services</h3>
+                        <p class="entertainment__description">Complete party planning services including decorations, catering, and special arrangements.</p>
+                        <ul class="entertainment__features">
+                            <li>Event coordination</li>
+                            <li>Custom decorations</li>
+                            <li>Premium bar service</li>
+                            <li>Photography/videography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Relaxation Content -->
+            <div class="content__category" data-category="relaxation">
+                <div class="section__header">
+                    <span class="section__subtitle">Wellness & Serenity</span>
+                    <h2 class="section__title">Relaxation & Wellness</h2>
+                    <p class="section__description">Unwind and rejuvenate with our premium wellness and relaxation services</p>
+                </div>
+
+                <div class="relaxation__container">
+                    <div class="relaxation__card">
+                        <div class="relaxation__image">
+                            <img src="https://images.unsplash.com/photo-1571017882945-2d8f07d24e30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Yacht spa services">
+                        </div>
+                        <div class="relaxation__content">
+                            <h3 class="relaxation__name">Spa & Massage Services</h3>
+                            <p class="relaxation__description">Professional spa treatments and massages performed by certified therapists while you cruise Dubai's serene waters.</p>
+                            <div class="relaxation__services">
+                                <span class="service">Deep tissue massage</span>
+                                <span class="service">Hot stone therapy</span>
+                                <span class="service">Aromatherapy</span>
+                                <span class="service">Couples massage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relaxation__card">
+                        <div class="relaxation__image">
+                            <img src="https://images.unsplash.com/photo-1571051006065-1bb4a11a40c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Sunset yoga on yacht">
+                        </div>
+                        <div class="relaxation__content">
+                            <h3 class="relaxation__name">Yoga & Meditation</h3>
+                            <p class="relaxation__description">Find your inner peace with guided yoga sessions and meditation classes on deck during sunrise or sunset.</p>
+                            <div class="relaxation__services">
+                                <span class="service">Sunrise yoga</span>
+                                <span class="service">Sunset meditation</span>
+                                <span class="service">Private instruction</span>
+                                <span class="service">Group sessions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adventure Content -->
+            <div class="content__category" data-category="adventure">
+                <div class="section__header">
+                    <span class="section__subtitle">Extreme Adventures</span>
+                    <h2 class="section__title">Ultimate Adventure Experiences</h2>
+                    <p class="section__description">Push your limits with our extreme adventure activities and marine exploration</p>
+                </div>
+
+                <div class="adventure__grid">
+                    <div class="adventure__card">
+                        <div class="adventure__icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3 class="adventure__name">Deep Sea Fishing</h3>
+                        <p class="adventure__description">Experience the thrill of catching big game fish in Dubai's deep waters with professional fishing guides.</p>
+                        <div class="adventure__highlights">
+                            <span class="highlight">Professional guides</span>
+                            <span class="highlight">Premium equipment</span>
+                            <span class="highlight">Fish cleaning service</span>
+                        </div>
+                    </div>
+
+                    <div class="adventure__card">
+                        <div class="adventure__icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h3 class="adventure__name">Scuba Diving</h3>
+                        <p class="adventure__description">Explore Dubai's underwater world with certified dive masters and discover artificial reefs and marine life.</p>
+                        <div class="adventure__highlights">
+                            <span class="highlight">PADI certified</span>
+                            <span class="highlight">All equipment included</span>
+                            <span class="highlight">Underwater photography</span>
+                        </div>
+                    </div>
+
+                    <div class="adventure__card">
+                        <div class="adventure__icon">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                        <h3 class="adventure__name">Dolphin Watching</h3>
+                        <p class="adventure__description">Encounter playful dolphins in their natural habitat with our marine wildlife specialists.</p>
+                        <div class="adventure__highlights">
+                            <span class="highlight">Marine biologist guide</span>
+                            <span class="highlight">80% success rate</span>
+                            <span class="highlight">Photo opportunities</span>
+                        </div>
+                    </div>
+
+                    <div class="adventure__card">
+                        <div class="adventure__icon">
+                            <i class="fas fa-anchor"></i>
+                        </div>
+                        <h3 class="adventure__name">Treasure Hunting</h3>
+                        <p class="adventure__description">Embark on exciting treasure hunting adventures using metal detectors and diving equipment.</p>
+                        <div class="adventure__highlights">
+                            <span class="highlight">Metal detectors provided</span>
+                            <span class="highlight">Treasure maps</span>
+                            <span class="highlight">Prizes guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Packages Section -->
+    <section class="activity-packages section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Combo Deals</span>
+                <h2 class="section__title">Activity Packages</h2>
+                <p class="section__description">Save more with our specially curated activity packages</p>
+            </div>
+
+            <div class="packages__grid">
+                <div class="package__card">
+                    <div class="package__header">
+                        <h3 class="package__name">Adrenaline Rush</h3>
+                        <div class="package__price">
+                            <span class="price">AED 1,200</span>
+                            <span class="period">/ package</span>
+                        </div>
+                    </div>
+                    <div class="package__content">
+                        <ul class="package__includes">
+                            <li>Jet skiing (1 hour)</li>
+                            <li>Parasailing (1 flight)</li>
+                            <li>Wakeboarding session</li>
+                            <li>Professional instruction</li>
+                            <li>Safety equipment</li>
+                        </ul>
+                        <div class="package__savings">Save AED 300!</div>
+                        <a href="index.html#contact" class="btn btn--outline package__btn">Book Package</a>
+                    </div>
+                </div>
+
+                <div class="package__card featured">
+                    <div class="package__header">
+                        <h3 class="package__name">Ultimate Adventure</h3>
+                        <div class="package__price">
+                            <span class="price">AED 2,500</span>
+                            <span class="period">/ package</span>
+                        </div>
+                    </div>
+                    <div class="package__content">
+                        <ul class="package__includes">
+                            <li>All water sports activities</li>
+                            <li>Scuba diving experience</li>
+                            <li>Fishing expedition</li>
+                            <li>Gourmet lunch</li>
+                            <li>Professional photography</li>
+                            <li>8-hour yacht charter</li>
+                        </ul>
+                        <div class="package__savings">Save AED 800!</div>
+                        <a href="index.html#contact" class="btn btn--primary package__btn">Book Package</a>
+                    </div>
+                </div>
+
+                <div class="package__card">
+                    <div class="package__header">
+                        <h3 class="package__name">Relaxation Retreat</h3>
+                        <div class="package__price">
+                            <span class="price">AED 1,800</span>
+                            <span class="period">/ package</span>
+                        </div>
+                    </div>
+                    <div class="package__content">
+                        <ul class="package__includes">
+                            <li>Spa treatments</li>
+                            <li>Yoga session</li>
+                            <li>Gourmet dining</li>
+                            <li>Sunset cruise</li>
+                            <li>Premium beverages</li>
+                            <li>6-hour charter</li>
+                        </ul>
+                        <div class="package__savings">Save AED 400!</div>
+                        <a href="index.html#contact" class="btn btn--outline package__btn">Book Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Dubai Yacht Experience</h3>
+                    <p>Creating unforgettable moments on the waters of Dubai</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Activities</h4>
+                    <ul>
+                        <li><a href="#water-sports">Water Sports</a></li>
+                        <li><a href="#entertainment">Entertainment</a></li>
+                        <li><a href="#relaxation">Relaxation</a></li>
+                        <li><a href="#adventure">Adventure</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dubai Yacht Experience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp__float">
+        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Activity tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab__btn');
+            const contentCategories = document.querySelectorAll('.content__category');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+
+                    // Remove active class from all tabs and content
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    contentCategories.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.querySelector(`[data-category="${category}"].content__category`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

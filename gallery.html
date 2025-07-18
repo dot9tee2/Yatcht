@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Dubai Yacht Experience | Photos & Videos</title>
+    <meta name="description" content="Explore our stunning gallery of yacht experiences in Dubai. Browse photos and videos showcasing luxury yacht adventures, sunset cruises, and water sports.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <section class="hero gallery-hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title">Memories Made at Sea</h1>
+            <p class="hero__subtitle">Discover the magic through our guests' eyes</p>
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <span class="stat__number">500+</span>
+                    <span class="stat__label">Happy Moments</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="stat__number">1000+</span>
+                    <span class="stat__label">Photos Captured</span>
+                </div>
+                <div class="gallery-stat">
+                    <span class="stat__number">50+</span>
+                    <span class="stat__label">Videos</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#gallery-filters" class="hero__scroll-link">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Filters Section -->
+    <section class="gallery-filters section" id="gallery-filters">
+        <div class="container">
+            <div class="filters__container">
+                <h3 class="filters__title">Explore Our Moments</h3>
+                <div class="filters__options">
+                    <button class="filter__btn active" data-filter="all">All Media</button>
+                    <button class="filter__btn" data-filter="luxury">Luxury Yachts</button>
+                    <button class="filter__btn" data-filter="adventure">Adventure</button>
+                    <button class="filter__btn" data-filter="sunset">Sunsets</button>
+                    <button class="filter__btn" data-filter="parties">Celebrations</button>
+                    <button class="filter__btn" data-filter="videos">Videos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <section class="main-gallery section">
+        <div class="container">
+            <div class="gallery__grid" id="gallery-grid">
+                <!-- Luxury Yacht Photos -->
+                <div class="gallery__item luxury" data-category="luxury">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury yacht Azure Dream">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Azure Dream</h4>
+                                <p>Luxury Cruise Experience</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item luxury" data-category="luxury">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Golden Horizon yacht interior">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Golden Horizon</h4>
+                                <p>Ultra-Luxury Interior</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure Photos -->
+                <div class="gallery__item adventure" data-category="adventure">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1560714396-6c2f3f5f77f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jet skiing adventure">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Jet Ski Adventure</h4>
+                                <p>High-Speed Water Sports</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item adventure" data-category="adventure">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1562141134-4a04e3d61e7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Parasailing over Dubai">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Parasailing Adventure</h4>
+                                <p>Sky-High Dubai Views</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunset Photos -->
+                <div class="gallery__item sunset" data-category="sunset">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunset cruise Dubai">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Dubai Sunset</h4>
+                                <p>Golden Hour Magic</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item sunset" data-category="sunset">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1571051006065-1bb4a11a40c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Romantic sunset dinner">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Romantic Dinner</h4>
+                                <p>Sunset Dining Experience</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Photos -->
+                <div class="gallery__item parties" data-category="parties">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1561881286-9f1aced22be8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yacht party celebration">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Birthday Celebration</h4>
+                                <p>Marina Party Vibes</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item parties" data-category="parties">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate event yacht">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Corporate Event</h4>
+                                <p>Team Building Cruise</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Items -->
+                <div class="gallery__item videos large" data-category="videos">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yacht experience video">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Dubai Yacht Experience</h4>
+                                <p>2:30 minutes of pure luxury</p>
+                            </div>
+                            <button class="gallery__view" onclick="openVideo('yacht-experience')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video__badge">
+                            <i class="fas fa-play"></i>
+                            <span>Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item videos adventure" data-category="videos adventure">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1573844237073-eb01fa846ac7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Water sports video">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Water Sports Highlights</h4>
+                                <p>Adrenaline-pumping adventures</p>
+                            </div>
+                            <button class="gallery__view" onclick="openVideo('water-sports')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video__badge">
+                            <i class="fas fa-play"></i>
+                            <span>Video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Photos -->
+                <div class="gallery__item luxury sunset" data-category="luxury sunset">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Burj Al Arab yacht view">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Burj Al Arab Views</h4>
+                                <p>Iconic Dubai Landmark</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item adventure" data-category="adventure">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deep sea fishing">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Deep Sea Fishing</h4>
+                                <p>Big Game Catch</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item parties" data-category="parties">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Night party yacht">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Night Party</h4>
+                                <p>Marina Lights & Music</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery__item luxury wide" data-category="luxury">
+                    <div class="gallery__image">
+                        <img src="https://images.unsplash.com/photo-1571417978635-8dc3e4e4f18e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Yacht luxury deck">
+                        <div class="gallery__overlay">
+                            <div class="gallery__info">
+                                <h4>Premium Deck Experience</h4>
+                                <p>Ultimate Luxury & Comfort</p>
+                            </div>
+                            <button class="gallery__view" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="gallery__load-more">
+                <button class="btn btn--outline" id="load-more-btn">Load More Memories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-gallery section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Share Your Experience</span>
+                <h2 class="section__title">Guest Moments on Social Media</h2>
+                <p class="section__description">See how our guests capture and share their unforgettable yacht experiences</p>
+            </div>
+
+            <div class="social__container">
+                <div class="social__item">
+                    <div class="social__header">
+                        <div class="social__profile">
+                            <div class="profile__avatar">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="profile__info">
+                                <h4>@sarah_adventures</h4>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <i class="fab fa-instagram social__icon"></i>
+                    </div>
+                    <div class="social__image">
+                        <img src="https://images.unsplash.com/photo-1573843580848-f2f5f32c0cf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Instagram post">
+                    </div>
+                    <div class="social__content">
+                        <p>"Best birthday celebration ever! @dubaiyachtexperience made it absolutely magical ✨🛥️ #YachtLife #DubaiVibes"</p>
+                        <div class="social__stats">
+                            <span><i class="fas fa-heart"></i> 247</span>
+                            <span><i class="fas fa-comment"></i> 18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social__item">
+                    <div class="social__header">
+                        <div class="social__profile">
+                            <div class="profile__avatar">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="profile__info">
+                                <h4>@dubai_explorer</h4>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                        <i class="fab fa-tiktok social__icon"></i>
+                    </div>
+                    <div class="social__image">
+                        <img src="https://images.unsplash.com/photo-1593696954435-6309d19b3354?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="TikTok post">
+                        <div class="video__overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="social__content">
+                        <p>"POV: You're living your best life on a Dubai yacht 🔥 Thanks @dubaiyachtexperience for this incredible day!"</p>
+                        <div class="social__stats">
+                            <span><i class="fas fa-heart"></i> 1.2K</span>
+                            <span><i class="fas fa-comment"></i> 89</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social__item">
+                    <div class="social__header">
+                        <div class="social__profile">
+                            <div class="profile__avatar">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="profile__info">
+                                <h4>@couples_getaway</h4>
+                                <span>3 days ago</span>
+                            </div>
+                        </div>
+                        <i class="fab fa-instagram social__icon"></i>
+                    </div>
+                    <div class="social__image">
+                        <img src="https://images.unsplash.com/photo-1589840062932-f2ab2e4d0b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Couple yacht photo">
+                    </div>
+                    <div class="social__content">
+                        <p>"Anniversary goals achieved! 💕 The sunset cruise was pure perfection. Already planning our next trip! #Romance #YachtLife"</p>
+                        <div class="social__stats">
+                            <span><i class="fas fa-heart"></i> 156</span>
+                            <span><i class="fas fa-comment"></i> 12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social__cta">
+                <h3>Share Your Adventure</h3>
+                <p>Tag us @dubaiyachtexperience and #YachtLifeDubai to be featured!</p>
+                <div class="social__links">
+                    <a href="#" class="social__link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                    <a href="#" class="social__link">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Watch us on TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Contest Section -->
+    <section class="photo-contest section">
+        <div class="container">
+            <div class="contest__content">
+                <div class="contest__text">
+                    <span class="section__subtitle">Monthly Contest</span>
+                    <h2 class="section__title">Best Yacht Photo Challenge</h2>
+                    <p class="contest__description">
+                        Share your best yacht moments with us! Every month we select the most amazing photo shared by our guests. 
+                        Winners receive a complimentary sunset cruise for two and professional photography session.
+                    </p>
+                    <div class="contest__features">
+                        <div class="contest__feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Monthly Winners</span>
+                        </div>
+                        <div class="contest__feature">
+                            <i class="fas fa-gift"></i>
+                            <span>Free Sunset Cruise</span>
+                        </div>
+                        <div class="contest__feature">
+                            <i class="fas fa-camera"></i>
+                            <span>Professional Photos</span>
+                        </div>
+                    </div>
+                    <a href="index.html#contact" class="btn btn--primary">Join Contest</a>
+                </div>
+                <div class="contest__image">
+                    <img src="https://images.unsplash.com/photo-1616635278252-db09a3735dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Photo contest winner">
+                    <div class="contest__badge">
+                        <i class="fas fa-award"></i>
+                        <span>Winner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox__content">
+            <button class="lightbox__close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img class="lightbox__image" id="lightbox-image" src="" alt="">
+            <div class="lightbox__info" id="lightbox-info">
+                <h4 id="lightbox-title"></h4>
+                <p id="lightbox-description"></p>
+            </div>
+            <div class="lightbox__nav">
+                <button class="lightbox__prev" onclick="previousImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox__next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Dubai Yacht Experience</h3>
+                    <p>Creating unforgettable moments on the waters of Dubai</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Gallery</h4>
+                    <ul>
+                        <li><a href="#luxury">Luxury Yachts</a></li>
+                        <li><a href="#adventure">Adventures</a></li>
+                        <li><a href="#sunset">Sunset Cruises</a></li>
+                        <li><a href="#parties">Celebrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social__links">
+                        <a href="#" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social__link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dubai Yacht Experience. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp__float">
+        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery functionality
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery filtering
+            const filterBtns = document.querySelectorAll('.filter__btn');
+            const galleryItems = document.querySelectorAll('.gallery__item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            if (item.getAttribute('data-category').includes(filter)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Collect all gallery images for lightbox navigation
+            galleryImages = Array.from(document.querySelectorAll('.gallery__item img')).map(img => {
+                return {
+                    src: img.src,
+                    title: img.closest('.gallery__item').querySelector('h4').textContent,
+                    description: img.closest('.gallery__item').querySelector('p').textContent
+                };
+            });
+
+            // Load more functionality
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            loadMoreBtn.addEventListener('click', function() {
+                // Simulate loading more images
+                this.textContent = 'Loading...';
+                setTimeout(() => {
+                    this.textContent = 'All memories loaded!';
+                    this.disabled = true;
+                }, 2000);
+            });
+        });
+
+        function openLightbox(element) {
+            const img = element.closest('.gallery__item').querySelector('img');
+            const title = element.closest('.gallery__item').querySelector('h4').textContent;
+            const description = element.closest('.gallery__item').querySelector('p').textContent;
+            
+            currentImageIndex = galleryImages.findIndex(item => item.src === img.src);
+            
+            document.getElementById('lightbox-image').src = img.src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-description').textContent = description;
+            document.getElementById('lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightboxImage();
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            updateLightboxImage();
+        }
+
+        function updateLightboxImage() {
+            const image = galleryImages[currentImageIndex];
+            document.getElementById('lightbox-image').src = image.src;
+            document.getElementById('lightbox-title').textContent = image.title;
+            document.getElementById('lightbox-description').textContent = image.description;
+        }
+
+        function openVideo(videoId) {
+            // This would integrate with a video player
+            alert('Video player would open here for: ' + videoId);
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                previousImage();
+            } else if (e.key === 'ArrowRight') {
+                nextImage();
+            }
+        });
+
+        // Close lightbox when clicking outside
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html> 
