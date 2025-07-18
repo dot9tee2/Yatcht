@@ -6,11 +6,29 @@
     <title>Dubai Yacht Experience - Luxury Yacht Rentals in Dubai</title>
     <meta name="description" content="Experience luxury yacht rentals in Dubai. Professional crew, premium fleet, and unforgettable moments at sea. Book your Dubai yacht charter today.">
     <meta name="keywords" content="yacht rental Dubai, luxury yacht charter Dubai, book yacht Dubai, Dubai Marina yacht rental, private yacht Dubai">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <meta name="theme-color" content="#001f3f">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
@@ -169,7 +187,7 @@
         </div>
         
         <div class="hero__scroll">
-            <div class="hero__scroll-indicator">
+            <div class="hero__scroll-indicator" role="button" tabindex="0" aria-label="Scroll down to explore more content">
                 <span></span>
             </div>
             <span class="hero__scroll-text">Scroll to explore</span>
@@ -233,10 +251,10 @@
                         </div>
                         
                         <div class="fleet__image">
-                            <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Yacht Azure Dream">
+                            <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Yacht Azure Dream - 75ft yacht with panoramic windows and spacious deck areas" loading="lazy">
                             <div class="fleet__image-overlay">
-                                <div class="fleet__quick-view">
-                                    <i class="fas fa-eye"></i>
+                                <div class="fleet__quick-view" role="button" tabindex="0" aria-label="View detailed information about Azure Dream yacht">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
                                     <span>Quick View</span>
                                 </div>
                             </div>
@@ -895,19 +913,21 @@
                         <li><a href="#fleet">Our Fleet</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__social">
                     <h4>Follow Us</h4>
                     <div class="social__links">
-                        <a href="#" class="social__link">
+                        <a href="https://instagram.com/dubaiyachtexperience" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://wa.me/971501234567" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://tiktok.com/@dubaiyachtexperience" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
@@ -922,8 +942,8 @@
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp__float">
-        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank">
-            <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/971501234567" class="whatsapp__btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
     </div>
 

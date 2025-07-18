@@ -500,18 +500,52 @@ class MultiStepForm {
         
         if (!this.validateCurrentStep()) return;
         
+        // Show loading state
+        this.submitBtn.disabled = true;
+        this.submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        
         const formData = new FormData(this.form);
         const data = Object.fromEntries(formData);
         
-        // Show success message
-        this.showSuccess();
-        
-        // Reset form after delay
-        setTimeout(() => {
-            this.form.reset();
-            this.currentStep = 0;
-            this.showStep(0);
-        }, 2000);
+        // Simulate form submission - replace with actual endpoint
+        this.simulateFormSubmission(data)
+            .then(() => {
+                this.showSuccess();
+                // Reset form after delay
+                setTimeout(() => {
+                    this.form.reset();
+                    this.currentStep = 0;
+                    this.showStep(0);
+                }, 3000);
+            })
+            .catch((error) => {
+                this.showError(null, 'Failed to send message. Please try again or call us directly.');
+                console.error('Form submission error:', error);
+            })
+            .finally(() => {
+                // Reset button state
+                this.submitBtn.disabled = false;
+                this.submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Get My Quote';
+            });
+    }
+    
+    simulateFormSubmission(data) {
+        // This simulates a form submission
+        // Replace this with actual form submission logic (e.g., fetch to your backend)
+        return new Promise((resolve, reject) => {
+            // Log form data for debugging
+            console.log('Form submission data:', data);
+            
+            // Simulate network delay
+            setTimeout(() => {
+                // Simulate 95% success rate
+                if (Math.random() > 0.05) {
+                    resolve();
+                } else {
+                    reject(new Error('Network error'));
+                }
+            }, 2000);
+        });
     }
     
     showSuccess() {
